@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suspicious Alerts - AML Transaction Monitor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <h1>AML Transaction Monitor</h1>
+      <p>Report suspicious transactions with secure details.</p>
+    </div>
+    <nav aria-label="Primary navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="suspicious.html">Suspicious Alerts</a></li>
+        <li><a href="transactions.html">Transaction Review</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <h2>Identify Suspicious Activity</h2>
+      <p>Submit details for transactions you believe may require further review.</p>
+    </section>
+
+    <section class="form-wrapper">
+      <form>
+        <fieldset>
+          <legend>Suspicious Transaction Details</legend>
+
+          <label for="transactionId">Transaction ID</label>
+          <input type="text" id="transactionId" name="transactionId" placeholder="Enter transaction ID" required>
+
+          <label for="amount">Amount (USD)</label>
+          <input type="number" id="amount" name="amount" min="1" step="0.01" placeholder="Amount" required>
+
+          <label for="origin">Origin Country</label>
+          <select id="origin" name="origin" required>
+            <option value="">Select a country</option>
+            <option value="US">United States</option>
+            <option value="GB">United Kingdom</option>
+            <option value="CN">China</option>
+            <option value="NG">Nigeria</option>
+            <option value="OTHER">Other</option>
+          </select>
+
+          <label for="reason">Reason for review</label>
+          <textarea id="reason" name="reason" rows="5" placeholder="Describe why this transaction appears suspicious"></textarea>
+
+          <div class="radio-group">
+            <span>Risk level</span>
+            <label><input type="radio" name="risk" value="high" checked> High</label>
+            <label><input type="radio" name="risk" value="medium"> Medium</label>
+            <label><input type="radio" name="risk" value="low"> Low</label>
+          </div>
+
+          <button type="submit">Submit Alert</button>
+        </fieldset>
+      </form>
+    </section>
+
+    <section class="info-card">
+      <h3>Next steps</h3>
+      <p>When a transaction raises flags, confirm customer identity, transaction purpose, and source of funds before escalating.</p>
+      <p><a href="transactions.html">View transaction review table</a> for automated risk levels.</p>
+    </section>
+  </main>
+</body>
+</html>

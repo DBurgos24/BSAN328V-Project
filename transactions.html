@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transaction Review - AML Transaction Monitor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <h1>AML Transaction Monitor</h1>
+      <p>Review transaction risk levels and search suspicious entries.</p>
+    </div>
+    <nav aria-label="Primary navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="suspicious.html">Suspicious Alerts</a></li>
+        <li><a href="transactions.html">Transaction Review</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <h2>Transaction Audit Table</h2>
+      <p>Search for specific transaction IDs and inspect suspicious risk levels.</p>
+    </section>
+
+    <section class="search-panel">
+      <label for="searchInput">Search Transaction ID</label>
+      <div class="search-row">
+        <input type="text" id="searchInput" placeholder="e.g. TXN-1003">
+        <button id="searchButton" type="button">Search</button>
+      </div>
+    </section>
+
+    <section class="table-card">
+      <table>
+        <caption>Transaction risk levels and suspicious indicators</caption>
+        <thead>
+          <tr>
+            <th scope="col">Transaction ID</th>
+            <th scope="col">Date</th>
+            <th scope="col">Amount</th>
+            <th scope="col">Country</th>
+            <th scope="col">Risk Level</th>
+          </tr>
+        </thead>
+        <tbody id="transactionTableBody">
+          <tr>
+            <td>TXN-1001</td>
+            <td>2026-04-01</td>
+            <td>$12,500.00</td>
+            <td>Nigeria</td>
+            <td>High</td>
+          </tr>
+          <tr>
+            <td>TXN-1002</td>
+            <td>2026-04-02</td>
+            <td>$4,200.75</td>
+            <td>United States</td>
+            <td>Low</td>
+          </tr>
+          <tr>
+            <td>TXN-1003</td>
+            <td>2026-04-03</td>
+            <td>$22,950.00</td>
+            <td>China</td>
+            <td>High</td>
+          </tr>
+          <tr>
+            <td>TXN-1004</td>
+            <td>2026-04-04</td>
+            <td>$1,125.00</td>
+            <td>United Kingdom</td>
+            <td>Medium</td>
+          </tr>
+          <tr>
+            <td>TXN-1005</td>
+            <td>2026-04-05</td>
+            <td>$3,700.00</td>
+            <td>Other</td>
+            <td>Medium</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>
