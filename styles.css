@@ -1,8 +1,8 @@
 :root {
   --bg: #f4f6fb;
   --surface: #ffffff;
-  --primary: #0c4b8e;
-  --accent: #1d6fa5;
+  --primary: #000000; /* Changed from #0c4b8e */
+  --accent: #000000; /* Changed from #1d6fa5 */
   --text: #14213d;
   --muted: #5b667a;
   --danger: #d62828;
@@ -36,7 +36,11 @@ button:hover {
 }
 
 header {
-  background: linear-gradient(135deg, #0c4b8e, #1d6fa5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, #000000, #000000); /* Changed from #0c4b8e, #1d6fa5 */
   color: white;
   padding: 1.5rem 1rem;
 }
@@ -177,7 +181,7 @@ textarea {
 button {
   border: none;
   border-radius: 12px;
-  background: var(--primary);
+  background: var(--primary); /* Updated to use black */
   color: white;
   padding: 0.95rem 1.3rem;
   font-weight: 700;

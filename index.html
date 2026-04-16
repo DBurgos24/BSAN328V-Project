@@ -28,29 +28,127 @@
       <a class="hero-button" href="transactions.html">Review Transactions</a>
     </section>
 
-    <section class="features">
-      <article>
-        <h3>Accessible Design</h3>
-        <p>Every page uses semantic elements for screen readers and improved navigation.</p>
-      </article>
-      <article>
-        <h3>Clear Alerts</h3>
-        <p>Submit suspicious transaction details and review alerts in one place.</p>
-      </article>
-      <article>
-        <h3>Responsive Layout</h3>
-        <p>The interface adapts smoothly to mobile, tablet, and desktop screens.</p>
-      </article>
+    <section class="statistics">
+      <h2>Key AML Statistics</h2>
+      <div class="stats-boxes">
+        <div class="stat-box">
+          <h3>Suspicious Transactions</h3>
+          <p>120</p>
+        </div>
+        <div class="stat-box">
+          <h3>Compliance Rate</h3>
+          <p>95%</p>
+        </div>
+        <div class="stat-box">
+          <h3>Alerts Resolved</h3>
+          <p>85</p>
+        </div>
+      </div>
     </section>
 
-    <section class="resource-card">
-      <figure>
-        <a href="https://www.fatf-gafi.org" target="_blank" rel="noreferrer noopener">
-          <img src="https://via.placeholder.com/600x300?text=AML+Guide" alt="Clickable image linking to international AML guidance" />
-        </a>
-        <figcaption>Click the image to visit official AML guidance from FATF.</figcaption>
-      </figure>
+    <style>
+      .stats-boxes {
+        display: flex;
+        gap: 1.5rem;
+        justify-content: center;
+        margin-top: 1.5rem;
+      }
+
+      .stat-box {
+        background: var(--surface);
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 1.5rem;
+        text-align: center;
+        flex: 1;
+        max-width: 300px;
+      }
+
+      .stat-box h3 {
+        margin: 0 0 0.5rem;
+        color: var(--primary);
+      }
+
+      .stat-box p {
+        font-size: 2rem;
+        font-weight: bold;
+        margin: 0;
+        color: var(--text);
+      }
+    </style>
+
+    <section class="important-links">
+      <h2>Important Resources</h2>
+      <div class="resources-content">
+        <ul>
+          <li><a href="https://www.fatf-gafi.org" target="_blank" rel="noopener noreferrer">FATF - Financial Action Task Force</a></li>
+          <li><a href="https://www.fincen.gov" target="_blank" rel="noopener noreferrer">FinCEN - Financial Crimes Enforcement Network</a></li>
+          <li><a href="https://www.sec.gov" target="_blank" rel="noopener noreferrer">U.S. Securities and Exchange Commission</a></li>
+        </ul>
+        <div class="resource-images">
+          <img src="images/fatf.png" alt="FATF Logo">
+          <img src="images/FinCENLogo.png" alt="FinCEN Logo">
+          <img src="images/Seal_of_the_United_States_Securities_and_Exchange_Commission.svg.png" alt="SEC Logo">
+        </div>
+      </div>
     </section>
+
+    <style>
+      .important-links {
+        margin-top: 2rem;
+        padding: 1.5rem;
+        background: var(--surface);
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .important-links h2 {
+        margin-bottom: 1rem;
+        color: var(--primary);
+      }
+
+      .resources-content {
+        display: flex;
+        align-items: flex-start;
+        gap: 2rem;
+      }
+
+      .important-links ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        flex: 2;
+      }
+
+      .important-links li {
+        margin-bottom: 0.75rem;
+      }
+
+      .important-links a {
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .important-links a:hover {
+        text-decoration: underline;
+      }
+
+      .resource-images {
+        display: flex;
+        flex: 1;
+        gap: 1rem;
+        justify-content: space-between;
+      }
+
+      .resource-images img {
+        width: 150px; /* Set a fixed width to expand horizontally */
+        height: 100px; /* Maintain a proportional height */
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        object-fit: cover; /* Ensures the image fills the width while maintaining aspect ratio */
+      }
+    </style>
   </main>
 
   <footer>
