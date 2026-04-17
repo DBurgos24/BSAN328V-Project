@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AML Transaction Monitor</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=1.1">
 </head>
 <body>
   <header>
@@ -16,7 +16,7 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="suspicious.html">Suspicious Alerts</a></li>
-        <li><a href="transactions.html">Transaction Review</a></li>
+        <li><a href="transactions.html">Transaction Audit</a></li>
       </ul>
     </nav>
   </header>
@@ -24,7 +24,7 @@
   <main>
     <section class="hero">
       <h2>Detect unusual transactions quickly</h2>
-      <p>Monitor and review activity for suspicious behavior in your digital commerce operations.</p>
+      <p>Monitor and review activity for suspicious behavior.</p>
       <a class="hero-button" href="transactions.html">Review Transactions</a>
     </section>
 
@@ -32,16 +32,16 @@
       <h2>Key AML Statistics</h2>
       <div class="stats-boxes">
         <div class="stat-box">
+          <h3>Total Transactions</h3>
+          <p>3,766</p>
+        </div>
+        <div class="stat-box">
+          <h3>Total Amount</h3>
+          <p>$8,578,017.5</p>
+        </div>
+        <div class="stat-box">
           <h3>Suspicious Transactions</h3>
-          <p>120</p>
-        </div>
-        <div class="stat-box">
-          <h3>Compliance Rate</h3>
-          <p>95%</p>
-        </div>
-        <div class="stat-box">
-          <h3>Alerts Resolved</h3>
-          <p>85</p>
+          <p>27</p>
         </div>
       </div>
     </section>
@@ -49,19 +49,21 @@
     <style>
       .stats-boxes {
         display: flex;
-        gap: 1.5rem;
+        flex-wrap: wrap;
+        gap: 1rem;
         justify-content: center;
         margin-top: 1.5rem;
+        margin-bottom: 2rem;
       }
 
       .stat-box {
         background: var(--surface);
         border-radius: 12px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        padding: 1.5rem;
+        padding: 1rem;
         text-align: center;
-        flex: 1;
-        max-width: 300px;
+        flex: 1 1 120px;
+        max-width: 250px;
       }
 
       .stat-box h3 {
@@ -81,14 +83,14 @@
       <h2>Important Resources</h2>
       <div class="resources-content">
         <ul>
-          <li><a href="https://www.fatf-gafi.org" target="_blank" rel="noopener noreferrer">FATF - Financial Action Task Force</a></li>
-          <li><a href="https://www.fincen.gov" target="_blank" rel="noopener noreferrer">FinCEN - Financial Crimes Enforcement Network</a></li>
-          <li><a href="https://www.sec.gov" target="_blank" rel="noopener noreferrer">U.S. Securities and Exchange Commission</a></li>
+          <li><a href="https://www.fatf-gafi.org" target="_blank" rel="noopener noreferrer"> <img src="images/fatf.png" alt="FATF Logo"></a></li>
+          <li><a href="https://www.fincen.gov" target="_blank" rel="noopener noreferrer"><img src="images/FinCENLogo.png" alt="FinCEN Logo"></a></li>
+          <li><a href="https://www.sec.gov" target="_blank" rel="noopener noreferrer"><img src="images/Seal_of_the_United_States_Securities_and_Exchange_Commission.svg.png" alt="SEC Logo"></a></li>
         </ul>
         <div class="resource-images">
-          <img src="images/fatf.png" alt="FATF Logo">
-          <img src="images/FinCENLogo.png" alt="FinCEN Logo">
-          <img src="images/Seal_of_the_United_States_Securities_and_Exchange_Commission.svg.png" alt="SEC Logo">
+          
+          
+          
         </div>
       </div>
     </section>
@@ -96,10 +98,11 @@
     <style>
       .important-links {
         margin-top: 2rem;
-        padding: 1.5rem;
+        padding: 1rem; /* Reduced padding to make the box shorter */
         background: var(--surface);
         border-radius: 12px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
       }
 
       .important-links h2 {

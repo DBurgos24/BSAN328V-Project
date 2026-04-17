@@ -16,7 +16,7 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="suspicious.html">Suspicious Alerts</a></li>
-        <li><a href="transactions.html">Transaction Review</a></li>
+        <li><a href="transactions.html">Transaction Audit</a></li>
       </ul>
     </nav>
   </header>
@@ -35,21 +35,8 @@
           <label for="transactionId">Transaction ID</label>
           <input type="text" id="transactionId" name="transactionId" placeholder="Enter transaction ID" required>
 
-          <label for="amount">Amount (USD)</label>
-          <input type="number" id="amount" name="amount" min="1" step="0.01" placeholder="Amount" required>
-
-          <label for="origin">Origin Country</label>
-          <select id="origin" name="origin" required>
-            <option value="">Select a country</option>
-            <option value="US">United States</option>
-            <option value="GB">United Kingdom</option>
-            <option value="CN">China</option>
-            <option value="NG">Nigeria</option>
-            <option value="OTHER">Other</option>
-          </select>
-
-          <label for="reason">Reason for review</label>
-          <textarea id="reason" name="reason" rows="5" placeholder="Describe why this transaction appears suspicious"></textarea>
+          <label for="notes">Notes</label>
+          <textarea id="notes" name="notes" rows="5" placeholder="Describe reason behind review results"></textarea>
 
           <div class="radio-group">
             <span>Risk level</span>
@@ -58,15 +45,18 @@
             <label><input type="radio" name="risk" value="low"> Low</label>
           </div>
 
-          <button type="submit">Submit Alert</button>
+          <label for="reviewer">Reviewer</label>
+          <select id="reviewer" name="reviewer" required>
+            <option value="">Select a reviewer</option>
+            <option value="David Burgos">David Burgos</option>
+            <option value="Yiorgos A. Bakamitsos">Yiorgos A. Bakamitsos</option>
+            <option value="William Sauce">William Sauce</option>
+            <option value="Christopher F. Roellke">Christopher F. Roellke</option>
+          </select>
+
+          <button type="submit" style="margin-top: 20px;">Submit Alert</button>
         </fieldset>
       </form>
-    </section>
-
-    <section class="info-card">
-      <h3>Next steps</h3>
-      <p>When a transaction raises flags, confirm customer identity, transaction purpose, and source of funds before escalating.</p>
-      <p><a href="transactions.html">View transaction review table</a> for automated risk levels.</p>
     </section>
   </main>
 </body>
