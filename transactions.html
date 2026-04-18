@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Transaction Audit - AML Transaction Monitor</title>
+  <title>Transaction List - AML Transaction Monitor</title>
   <link rel="stylesheet" href="styles.css">
   <style>
 
@@ -67,21 +67,25 @@
   <header>
     <div class="brand">
       <h1>AML Transaction Monitor</h1>
-      <p>Review transaction risk levels and search suspicious entries.</p>
+      <p>Your e-business anti-money laundering detection dashboard.</p>
     </div>
     <nav aria-label="Primary navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="suspicious.html">Suspicious Alerts</a></li>
-        <li><a href="transactions.html">Transaction Audit</a></li>
+        <li><a href="transactions.html">Transaction List</a></li>
+        <li><a href="suspicious.html">Review Transactions</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <section class="page-intro">
-      <h2>Transaction Audit Table</h2>
-      <p>Search for specific transaction IDs and inspect suspicious risk levels.</p>
+      <h2>Suspicious Transaction List Table</h2>
+      <p>Suspicious transactions are detected by an unsupervised 
+        Autoencoder with 
+        reconstruction error-based 
+        anomaly detection and trained exclusively on 
+        legitimate transactions.</p>
     </section>
 
     <section class="search-panel">
@@ -95,8 +99,8 @@
     <section class="table-card">
       <table>
         <caption>
-          Transaction risk levels and suspicious indicators:
-          <span class="transaction-count-label">Displaying 27 transactions</span>
+          Detected suspicious transactions and their review status:
+          <span class="transaction-count-label">Displaying 27 suspicous transactions</span>
         </caption>
         <thead>
           <tr>
