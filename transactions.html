@@ -5,63 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Transaction List - AML Transaction Monitor</title>
   <link rel="stylesheet" href="styles.css">
-  <style>
-
-          table {
-            width: 100%;
-            border-collapse: collapse;
-          }
-
-          th, td {
-            border: 1px solid #ddd;
-            text-align: left;
-            padding: 8px;
-          }
-
-          th {
-            word-wrap: break-word;
-            white-space: normal;
-          }
-
-          th:nth-child(1),
-          td:nth-child(1) {
-            width: 13%;
-          }
-
-          th:nth-child(2),
-          td:nth-child(2) {
-            width: 9%;
-          }
-
-          th:nth-child(3),
-          th:nth-child(4),
-          th:nth-child(5),
-          td:nth-child(3),
-          td:nth-child(4),
-          td:nth-child(5) {
-            width: 10%; /* Make these columns thinner */
-          }
-
-          th:nth-child(6),
-          td:nth-child(6) {
-            width: 9%;
-          }
-
-          th:nth-child(7),
-          td:nth-child(7) {
-            width: 6%;
-          }
-
-          th:nth-child(8),
-          td:nth-child(8) {
-            width: 8%;
-          }
-
-          th:nth-child(9),
-          td:nth-child(9) {
-            width: 12%;
-          }
-        </style>
 </head>
 <body>
   <header>
@@ -81,10 +24,10 @@
   <main>
     <section class="page-intro">
       <h2>Suspicious Transaction List Table</h2>
-      <p>Suspicious transactions are detected by an unsupervised 
-        Autoencoder with 
-        reconstruction error-based 
-        anomaly detection and trained exclusively on 
+      <p>Suspicious transactions are detected by an unsupervised
+        Autoencoder with
+        reconstruction error-based
+        anomaly detection and trained exclusively on
         legitimate transactions.</p>
     </section>
 
@@ -97,10 +40,10 @@
     </section>
 
     <section class="table-card">
-      <table>
+      <table class="transactions-table">
         <caption>
           Detected suspicious transactions and their review status:
-          <span class="transaction-count-label">Displaying 27 suspicous transactions</span>
+          <span class="transaction-count-label">Displaying 27 suspicious transactions</span>
         </caption>
         <thead>
           <tr>
@@ -417,5 +360,9 @@
       </table>
     </section>
   </main>
+
+  <footer>
+    <p>David Burgos &copy; 2026</p>
+  </footer>
 </body>
 </html>
