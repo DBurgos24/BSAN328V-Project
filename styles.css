@@ -323,22 +323,38 @@ tbody tr:nth-child(even) {
 /* Transactions table column widths */
 .transactions-table th:nth-child(1),
 .transactions-table td:nth-child(1) { width: 13%; }
+
+
 .transactions-table th:nth-child(2),
 .transactions-table td:nth-child(2) { width: 9%; }
+
+
 .transactions-table th:nth-child(3),
 .transactions-table th:nth-child(4),
 .transactions-table th:nth-child(5),
 .transactions-table td:nth-child(3),
 .transactions-table td:nth-child(4),
 .transactions-table td:nth-child(5) { width: 10%; }
+
+
 .transactions-table th:nth-child(6),
 .transactions-table td:nth-child(6) { width: 9%; }
+
+
 .transactions-table th:nth-child(7),
 .transactions-table td:nth-child(7) { width: 6%; }
+
+
 .transactions-table th:nth-child(8),
 .transactions-table td:nth-child(8) { width: 8%; }
+
+
 .transactions-table th:nth-child(9),
 .transactions-table td:nth-child(9) { width: 12%; }
+
+
+
+
 
 /* Footer */
 footer {
@@ -346,6 +362,14 @@ footer {
   padding: 1rem;
   color: var(--muted);
 }
+
+
+
+
+
+
+//==========================
+
 
 /* Responsive breakpoints */
 @media (max-width: 900px) {
